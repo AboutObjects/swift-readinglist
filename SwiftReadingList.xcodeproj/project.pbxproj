@@ -8,11 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		AB0D287719C7495F00657656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D287619C7495F00657656 /* AppDelegate.swift */; };
-		AB0D287919C7495F00657656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D287819C7495F00657656 /* ViewController.swift */; };
 		AB0D287C19C7495F00657656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0D287A19C7495F00657656 /* Main.storyboard */; };
 		AB0D287E19C7495F00657656 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0D287D19C7495F00657656 /* Images.xcassets */; };
 		AB0D288119C7495F00657656 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0D287F19C7495F00657656 /* LaunchScreen.xib */; };
 		AB0D288D19C7496000657656 /* SwiftReadingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D288C19C7496000657656 /* SwiftReadingListTests.swift */; };
+		AB0D28AC19C7497D00657656 /* ReadingListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D28AB19C7497D00657656 /* ReadingListModelTests.swift */; };
+		AB0D28AF19C7497D00657656 /* ReadingListModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D289B19C7497D00657656 /* ReadingListModel.framework */; };
+		AB0D28B019C7497D00657656 /* ReadingListModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D289B19C7497D00657656 /* ReadingListModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB0D28BB19C749CE00657656 /* ModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D28BA19C749CE00657656 /* ModelObject.swift */; };
+		AB0D28BD19C74ED800657656 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D28BC19C74ED800657656 /* Author.swift */; };
+		AB11E3D919C75478008BA124 /* ReadingListModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D289B19C7497D00657656 /* ReadingListModel.framework */; };
+		AB11E3DA19C754A7008BA124 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D28BC19C74ED800657656 /* Author.swift */; };
+		AB11E3DB19C754AA008BA124 /* ModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D28BA19C749CE00657656 /* ModelObject.swift */; };
+		AB11E3DD19C755CB008BA124 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11E3DC19C755CB008BA124 /* Book.swift */; };
+		AB11E3DE19C76A25008BA124 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11E3DC19C755CB008BA124 /* Book.swift */; };
+		AB11E3E019C7AB77008BA124 /* ReadingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11E3DF19C7AB77008BA124 /* ReadingList.swift */; };
+		AB11E3E119C7B902008BA124 /* ReadingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11E3DF19C7AB77008BA124 /* ReadingList.swift */; };
+		AB37840219C8DD720045B96F /* ReadingListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37840119C8DD720045B96F /* ReadingListStore.swift */; };
+		AB37840319C8EE550045B96F /* ReadingListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37840119C8DD720045B96F /* ReadingListStore.swift */; };
+		AB37840519C8EF6B0045B96F /* BooksAndAuthors.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB37840419C8EF6B0045B96F /* BooksAndAuthors.plist */; };
+		AB37840619C8EF6B0045B96F /* BooksAndAuthors.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB37840419C8EF6B0045B96F /* BooksAndAuthors.plist */; };
+		AB37840819C8F2B10045B96F /* ReadingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37840719C8F2B10045B96F /* ReadingListController.swift */; };
+		AB37840919C8F2B10045B96F /* ReadingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37840719C8F2B10045B96F /* ReadingListController.swift */; };
+		AB37841519C8F8140045B96F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37841419C8F8140045B96F /* Extensions.swift */; };
+		AB37841619C8F8140045B96F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37841419C8F8140045B96F /* Extensions.swift */; };
+		AB37846A19C8FDFA0045B96F /* ReadingListModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AB37841719C8FD370045B96F /* ReadingListModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +43,67 @@
 			remoteGlobalIDString = AB0D287019C7495F00657656;
 			remoteInfo = SwiftReadingList;
 		};
+		AB0D28AD19C7497D00657656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB0D286919C7495F00657656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB0D289A19C7497D00657656;
+			remoteInfo = ReadingListModel;
+		};
+		AB0D28B119C7497D00657656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB0D286919C7495F00657656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB0D289A19C7497D00657656;
+			remoteInfo = ReadingListModel;
+		};
+		AB11E3D719C7545E008BA124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB0D286919C7495F00657656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB0D289A19C7497D00657656;
+			remoteInfo = ReadingListModel;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB0D28B619C7497D00657656 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB0D28B019C7497D00657656 /* ReadingListModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AB0D287119C7495F00657656 /* SwiftReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0D287519C7495F00657656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB0D287619C7495F00657656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB0D287819C7495F00657656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB0D287B19C7495F00657656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB0D287D19C7495F00657656 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB0D288019C7495F00657656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AB0D288619C7496000657656 /* SwiftReadingListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReadingListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0D288B19C7496000657656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB0D288C19C7496000657656 /* SwiftReadingListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReadingListTests.swift; sourceTree = "<group>"; };
+		AB0D289B19C7497D00657656 /* ReadingListModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadingListModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0D289E19C7497D00657656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB0D28A519C7497D00657656 /* ReadingListModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadingListModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0D28AA19C7497D00657656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB0D28AB19C7497D00657656 /* ReadingListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListModelTests.swift; sourceTree = "<group>"; };
+		AB0D28BA19C749CE00657656 /* ModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelObject.swift; sourceTree = "<group>"; };
+		AB0D28BC19C74ED800657656 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		AB11E3DC19C755CB008BA124 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		AB11E3DF19C7AB77008BA124 /* ReadingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingList.swift; sourceTree = "<group>"; };
+		AB37840119C8DD720045B96F /* ReadingListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingListStore.swift; sourceTree = "<group>"; };
+		AB37840419C8EF6B0045B96F /* BooksAndAuthors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = BooksAndAuthors.plist; sourceTree = "<group>"; };
+		AB37840719C8F2B10045B96F /* ReadingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingListController.swift; sourceTree = "<group>"; };
+		AB37841419C8F8140045B96F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AB37841719C8FD370045B96F /* ReadingListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadingListModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0D28AF19C7497D00657656 /* ReadingListModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,12 +122,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB0D289719C7497D00657656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0D28A219C7497D00657656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB11E3D919C75478008BA124 /* ReadingListModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		AB0D286819C7495F00657656 = {
 			isa = PBXGroup;
 			children = (
+				AB0D289C19C7497D00657656 /* ReadingListModel */,
+				AB0D28A819C7497D00657656 /* ReadingListModelTests */,
 				AB0D287319C7495F00657656 /* SwiftReadingList */,
 				AB0D288919C7496000657656 /* SwiftReadingListTests */,
 				AB0D287219C7495F00657656 /* Products */,
@@ -70,6 +156,8 @@
 			children = (
 				AB0D287119C7495F00657656 /* SwiftReadingList.app */,
 				AB0D288619C7496000657656 /* SwiftReadingListTests.xctest */,
+				AB0D289B19C7497D00657656 /* ReadingListModel.framework */,
+				AB0D28A519C7497D00657656 /* ReadingListModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,7 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				AB0D287619C7495F00657656 /* AppDelegate.swift */,
-				AB0D287819C7495F00657656 /* ViewController.swift */,
+				AB37841419C8F8140045B96F /* Extensions.swift */,
+				AB37840719C8F2B10045B96F /* ReadingListController.swift */,
 				AB0D287A19C7495F00657656 /* Main.storyboard */,
 				AB0D287D19C7495F00657656 /* Images.xcassets */,
 				AB0D287F19C7495F00657656 /* LaunchScreen.xib */,
@@ -112,7 +201,58 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AB0D289C19C7497D00657656 /* ReadingListModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB37840419C8EF6B0045B96F /* BooksAndAuthors.plist */,
+				AB37841719C8FD370045B96F /* ReadingListModel.h */,
+				AB0D28BA19C749CE00657656 /* ModelObject.swift */,
+				AB0D28BC19C74ED800657656 /* Author.swift */,
+				AB11E3DC19C755CB008BA124 /* Book.swift */,
+				AB11E3DF19C7AB77008BA124 /* ReadingList.swift */,
+				AB37840119C8DD720045B96F /* ReadingListStore.swift */,
+				AB0D289D19C7497D00657656 /* Supporting Files */,
+			);
+			path = ReadingListModel;
+			sourceTree = "<group>";
+		};
+		AB0D289D19C7497D00657656 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB0D289E19C7497D00657656 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB0D28A819C7497D00657656 /* ReadingListModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB0D28AB19C7497D00657656 /* ReadingListModelTests.swift */,
+				AB0D28A919C7497D00657656 /* Supporting Files */,
+			);
+			path = ReadingListModelTests;
+			sourceTree = "<group>";
+		};
+		AB0D28A919C7497D00657656 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB0D28AA19C7497D00657656 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AB0D289819C7497D00657656 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB37846A19C8FDFA0045B96F /* ReadingListModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		AB0D287019C7495F00657656 /* SwiftReadingList */ = {
@@ -122,10 +262,13 @@
 				AB0D286D19C7495F00657656 /* Sources */,
 				AB0D286E19C7495F00657656 /* Frameworks */,
 				AB0D286F19C7495F00657656 /* Resources */,
+				AB0D28B619C7497D00657656 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AB0D28AE19C7497D00657656 /* PBXTargetDependency */,
+				AB0D28B219C7497D00657656 /* PBXTargetDependency */,
 			);
 			name = SwiftReadingList;
 			productName = SwiftReadingList;
@@ -150,6 +293,42 @@
 			productReference = AB0D288619C7496000657656 /* SwiftReadingListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AB0D289A19C7497D00657656 /* ReadingListModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0D28B319C7497D00657656 /* Build configuration list for PBXNativeTarget "ReadingListModel" */;
+			buildPhases = (
+				AB0D289619C7497D00657656 /* Sources */,
+				AB0D289719C7497D00657656 /* Frameworks */,
+				AB0D289819C7497D00657656 /* Headers */,
+				AB0D289919C7497D00657656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadingListModel;
+			productName = ReadingListModel;
+			productReference = AB0D289B19C7497D00657656 /* ReadingListModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB0D28A419C7497D00657656 /* ReadingListModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0D28B719C7497D00657656 /* Build configuration list for PBXNativeTarget "ReadingListModelTests" */;
+			buildPhases = (
+				AB0D28A119C7497D00657656 /* Sources */,
+				AB0D28A219C7497D00657656 /* Frameworks */,
+				AB0D28A319C7497D00657656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB11E3D819C7545E008BA124 /* PBXTargetDependency */,
+			);
+			name = ReadingListModelTests;
+			productName = ReadingListModelTests;
+			productReference = AB0D28A519C7497D00657656 /* ReadingListModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +342,13 @@
 						CreatedOnToolsVersion = 6.0;
 					};
 					AB0D288519C7496000657656 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = AB0D287019C7495F00657656;
+					};
+					AB0D289A19C7497D00657656 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					AB0D28A419C7497D00657656 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = AB0D287019C7495F00657656;
 					};
@@ -183,6 +369,8 @@
 			targets = (
 				AB0D287019C7495F00657656 /* SwiftReadingList */,
 				AB0D288519C7496000657656 /* SwiftReadingListTests */,
+				AB0D289A19C7497D00657656 /* ReadingListModel */,
+				AB0D28A419C7497D00657656 /* ReadingListModelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +393,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB0D289919C7497D00657656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB37840519C8EF6B0045B96F /* BooksAndAuthors.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0D28A319C7497D00657656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB37840619C8EF6B0045B96F /* BooksAndAuthors.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,8 +416,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0D287919C7495F00657656 /* ViewController.swift in Sources */,
 				AB0D287719C7495F00657656 /* AppDelegate.swift in Sources */,
+				AB37841519C8F8140045B96F /* Extensions.swift in Sources */,
+				AB37840819C8F2B10045B96F /* ReadingListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +426,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB37840919C8F2B10045B96F /* ReadingListController.swift in Sources */,
+				AB37841619C8F8140045B96F /* Extensions.swift in Sources */,
 				AB0D288D19C7496000657656 /* SwiftReadingListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0D289619C7497D00657656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0D28BD19C74ED800657656 /* Author.swift in Sources */,
+				AB0D28BB19C749CE00657656 /* ModelObject.swift in Sources */,
+				AB37840219C8DD720045B96F /* ReadingListStore.swift in Sources */,
+				AB11E3E019C7AB77008BA124 /* ReadingList.swift in Sources */,
+				AB11E3DD19C755CB008BA124 /* Book.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0D28A119C7497D00657656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB11E3E119C7B902008BA124 /* ReadingList.swift in Sources */,
+				AB11E3DE19C76A25008BA124 /* Book.swift in Sources */,
+				AB11E3DA19C754A7008BA124 /* Author.swift in Sources */,
+				AB11E3DB19C754AA008BA124 /* ModelObject.swift in Sources */,
+				AB37840319C8EE550045B96F /* ReadingListStore.swift in Sources */,
+				AB0D28AC19C7497D00657656 /* ReadingListModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +464,21 @@
 			isa = PBXTargetDependency;
 			target = AB0D287019C7495F00657656 /* SwiftReadingList */;
 			targetProxy = AB0D288719C7496000657656 /* PBXContainerItemProxy */;
+		};
+		AB0D28AE19C7497D00657656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB0D289A19C7497D00657656 /* ReadingListModel */;
+			targetProxy = AB0D28AD19C7497D00657656 /* PBXContainerItemProxy */;
+		};
+		AB0D28B219C7497D00657656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB0D289A19C7497D00657656 /* ReadingListModel */;
+			targetProxy = AB0D28B119C7497D00657656 /* PBXContainerItemProxy */;
+		};
+		AB11E3D819C7545E008BA124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB0D289A19C7497D00657656 /* ReadingListModel */;
+			targetProxy = AB11E3D719C7545E008BA124 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -336,9 +583,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = SwiftReadingList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +595,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = SwiftReadingList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 			};
 			name = Release;
 		};
@@ -386,6 +637,85 @@
 			};
 			name = Release;
 		};
+		AB0D28B419C7497D00657656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReadingListModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB0D28B519C7497D00657656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReadingListModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB0D28B819C7497D00657656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReadingListModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftReadingList.app/SwiftReadingList";
+			};
+			name = Debug;
+		};
+		AB0D28B919C7497D00657656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReadingListModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftReadingList.app/SwiftReadingList";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +735,7 @@
 				AB0D289219C7496000657656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB0D289319C7496000657656 /* Build configuration list for PBXNativeTarget "SwiftReadingListTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +744,25 @@
 				AB0D289519C7496000657656 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0D28B319C7497D00657656 /* Build configuration list for PBXNativeTarget "ReadingListModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0D28B419C7497D00657656 /* Debug */,
+				AB0D28B519C7497D00657656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0D28B719C7497D00657656 /* Build configuration list for PBXNativeTarget "ReadingListModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0D28B819C7497D00657656 /* Debug */,
+				AB0D28B919C7497D00657656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
