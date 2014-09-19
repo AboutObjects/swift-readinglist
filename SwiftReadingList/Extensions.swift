@@ -16,6 +16,11 @@ extension UIColor
     {
         return UIColor(red: 1.0, green: 0.99, blue: 0.97, alpha: 1.0)
     }
+    
+    class func labelColor() -> UIColor
+    {
+        return UIColor(red: 0.25, green: 0.2, blue: 0.10, alpha: 1.0)
+    }
 }
 
 extension UIImage

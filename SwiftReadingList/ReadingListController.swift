@@ -19,8 +19,6 @@ class ReadingListController : UITableViewController
     
     @IBAction private func doneEditingBook(segue: UIStoryboardSegue)
     {
-//        let controller = segue.sourceViewController as EditBookController
-//        books.append(controller.book)
         tableView.reloadData()
         save()
     }
@@ -67,13 +65,13 @@ class ReadingListController : UITableViewController
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
     {
         switch (segue.identifier as NSString) {
-//        case "ViewBook":
-//            let controller = segue.destinationViewController as ViewBookController
-//            controller.book  = books[tableView.indexPathForSelectedRow()!.row] as Book
-//        case "AddBook":
-//            let navController = segue.destinationViewController as UINavigationController
-//            let controller = navController.childViewControllers.first as AddBookController
-//            controller.completion = { book in self.insertBook(book, index:0) }
+        case "ViewBook":
+            let controller = segue.destinationViewController as ViewBookController
+            controller.book  = books[tableView.indexPathForSelectedRow()!.row] as Book
+        case "AddBook":
+            let navController = segue.destinationViewController as UINavigationController
+            let controller = navController.childViewControllers.first as AddBookController
+            controller.completion = { book in self.insertBook(book, index:0) }
         default:
             println("Unmatched segue identifier \(segue.identifier)")
         }
@@ -131,8 +129,7 @@ class ReadingListController : UITableViewController
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("BookSummary") as UITableViewCell;
-        let book: Book = books[indexPath.row] as Book
-        
+        let book = books[indexPath.row] as Book
         cell.textLabel?.text = book.title
         cell.detailTextLabel?.text = book.year + "  " + book.author!.fullName
         cell.imageView?.image = UIImage.imageNamed(book.author!.lastName, inBundleForClass:Book.self)

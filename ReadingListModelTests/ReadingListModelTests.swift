@@ -102,6 +102,16 @@ class ReadingListModelTests: XCTestCase
     }
     
     
+    func testAuthorDictionary()
+    {
+        let author = Author(dictionary: AuthorDict1)
+        println("\(author)")
+        let dictRep = author.dictionaryRepresentation()
+        println("\(dictRep)")
+        let expected = AuthorDict1 as NSDictionary
+        XCTAssertEqual(dictRep, expected, "")
+    }
+    
     func testAuthorDictionaryRepresentation()
     {
         let author = Author(dictionary: AuthorDict1)
@@ -110,6 +120,18 @@ class ReadingListModelTests: XCTestCase
         println("\(dict)")
         XCTAssertEqual(author.firstName, AuthorDict1[FirstNameKey]!, "")
         XCTAssertEqual(author.lastName, AuthorDict1[LastNameKey]!, "")
+    }
+    
+    func testBookDictionary()
+    {
+        let book = Book(dictionary: BookDict1)
+        println("\(book)")
+        let dictRep = book.dictionaryRepresentation()
+        println("\(dictRep)")
+        let bookDict = BookDict1 as NSDictionary
+        XCTAssertEqual(dictRep, bookDict, "")
+        let authorDict = dictRep["author"] as NSDictionary
+        XCTAssertEqual(authorDict, AuthorDict1, "")
     }
     
     func testBookDictionaryRepresentation()

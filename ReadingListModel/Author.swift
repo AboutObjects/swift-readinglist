@@ -10,7 +10,8 @@ public class Author: ModelObject
     public var lastName = ""
     
     public var fullName: String {
-        return (firstName + " " + lastName).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        return (firstName + " " + lastName).stringByTrimmingCharactersInSet(
+            NSCharacterSet.whitespaceCharacterSet())
     }
     
     public override var description: String {

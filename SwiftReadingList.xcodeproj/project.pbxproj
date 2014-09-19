@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0BAC8219CB6DE7000DB458 /* AddBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0BAC8019CB6DE7000DB458 /* AddBookController.swift */; };
+		AB0BAC8319CB6DE7000DB458 /* EditBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0BAC8119CB6DE7000DB458 /* EditBookController.swift */; };
+		AB0BAC8419CB7092000DB458 /* AddBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0BAC8019CB6DE7000DB458 /* AddBookController.swift */; };
+		AB0BAC8519CB7092000DB458 /* EditBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0BAC8119CB6DE7000DB458 /* EditBookController.swift */; };
+		AB0BACBB19CB79DE000DB458 /* Austen.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACAA19CB79DE000DB458 /* Austen.png */; };
+		AB0BACBC19CB79DE000DB458 /* Bacon.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACAB19CB79DE000DB458 /* Bacon.png */; };
+		AB0BACBD19CB79DE000DB458 /* Carroll.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACAC19CB79DE000DB458 /* Carroll.png */; };
+		AB0BACBE19CB79DE000DB458 /* Dostoevsky.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACAD19CB79DE000DB458 /* Dostoevsky.png */; };
+		AB0BACBF19CB79DE000DB458 /* Eliot.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACAE19CB79DE000DB458 /* Eliot.png */; };
+		AB0BACC019CB79DE000DB458 /* Emerson.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACAF19CB79DE000DB458 /* Emerson.png */; };
+		AB0BACC119CB79DE000DB458 /* Hemingway.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACB019CB79DE000DB458 /* Hemingway.png */; };
+		AB0BACC219CB79DE000DB458 /* Milne.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACB119CB79DE000DB458 /* Milne.png */; };
+		AB0BACC319CB79DE000DB458 /* More.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACB219CB79DE000DB458 /* More.png */; };
+		AB0BACC419CB79DE000DB458 /* Newton.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACB319CB79DE000DB458 /* Newton.png */; };
+		AB0BACC519CB79DE000DB458 /* NoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACB419CB79DE000DB458 /* NoImage.png */; };
+		AB0BACC619CB79DE000DB458 /* Shakespeare.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACB519CB79DE000DB458 /* Shakespeare.png */; };
+		AB0BACC719CB79DE000DB458 /* Thoreau.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACB619CB79DE000DB458 /* Thoreau.jpg */; };
+		AB0BACC819CB79DE000DB458 /* Tolstoy.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACB719CB79DE000DB458 /* Tolstoy.png */; };
+		AB0BACC919CB79DE000DB458 /* Twain.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACB819CB79DE000DB458 /* Twain.png */; };
+		AB0BACCA19CB79DE000DB458 /* Wells.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACB919CB79DE000DB458 /* Wells.png */; };
+		AB0BACCB19CB79DE000DB458 /* Whitman.png in Resources */ = {isa = PBXBuildFile; fileRef = AB0BACBA19CB79DE000DB458 /* Whitman.png */; };
 		AB0D287719C7495F00657656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D287619C7495F00657656 /* AppDelegate.swift */; };
 		AB0D287C19C7495F00657656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB0D287A19C7495F00657656 /* Main.storyboard */; };
 		AB0D287E19C7495F00657656 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB0D287D19C7495F00657656 /* Images.xcassets */; };
@@ -17,6 +38,8 @@
 		AB0D28B019C7497D00657656 /* ReadingListModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D289B19C7497D00657656 /* ReadingListModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB0D28BB19C749CE00657656 /* ModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D28BA19C749CE00657656 /* ModelObject.swift */; };
 		AB0D28BD19C74ED800657656 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D28BC19C74ED800657656 /* Author.swift */; };
+		AB0DE27419C90B4D00DE5FE3 /* ViewBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DE27319C90B4D00DE5FE3 /* ViewBookController.swift */; };
+		AB0DE27519C90EE100DE5FE3 /* ViewBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0DE27319C90B4D00DE5FE3 /* ViewBookController.swift */; };
 		AB11E3D919C75478008BA124 /* ReadingListModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0D289B19C7497D00657656 /* ReadingListModel.framework */; };
 		AB11E3DA19C754A7008BA124 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D28BC19C74ED800657656 /* Author.swift */; };
 		AB11E3DB19C754AA008BA124 /* ModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0D28BA19C749CE00657656 /* ModelObject.swift */; };
@@ -81,6 +104,25 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB0BAC8019CB6DE7000DB458 /* AddBookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookController.swift; sourceTree = "<group>"; };
+		AB0BAC8119CB6DE7000DB458 /* EditBookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBookController.swift; sourceTree = "<group>"; };
+		AB0BACAA19CB79DE000DB458 /* Austen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Austen.png; sourceTree = "<group>"; };
+		AB0BACAB19CB79DE000DB458 /* Bacon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bacon.png; sourceTree = "<group>"; };
+		AB0BACAC19CB79DE000DB458 /* Carroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Carroll.png; sourceTree = "<group>"; };
+		AB0BACAD19CB79DE000DB458 /* Dostoevsky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dostoevsky.png; sourceTree = "<group>"; };
+		AB0BACAE19CB79DE000DB458 /* Eliot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Eliot.png; sourceTree = "<group>"; };
+		AB0BACAF19CB79DE000DB458 /* Emerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Emerson.png; sourceTree = "<group>"; };
+		AB0BACB019CB79DE000DB458 /* Hemingway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hemingway.png; sourceTree = "<group>"; };
+		AB0BACB119CB79DE000DB458 /* Milne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Milne.png; sourceTree = "<group>"; };
+		AB0BACB219CB79DE000DB458 /* More.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = More.png; sourceTree = "<group>"; };
+		AB0BACB319CB79DE000DB458 /* Newton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Newton.png; sourceTree = "<group>"; };
+		AB0BACB419CB79DE000DB458 /* NoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoImage.png; sourceTree = "<group>"; };
+		AB0BACB519CB79DE000DB458 /* Shakespeare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shakespeare.png; sourceTree = "<group>"; };
+		AB0BACB619CB79DE000DB458 /* Thoreau.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thoreau.jpg; sourceTree = "<group>"; };
+		AB0BACB719CB79DE000DB458 /* Tolstoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tolstoy.png; sourceTree = "<group>"; };
+		AB0BACB819CB79DE000DB458 /* Twain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twain.png; sourceTree = "<group>"; };
+		AB0BACB919CB79DE000DB458 /* Wells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wells.png; sourceTree = "<group>"; };
+		AB0BACBA19CB79DE000DB458 /* Whitman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Whitman.png; sourceTree = "<group>"; };
 		AB0D287119C7495F00657656 /* SwiftReadingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftReadingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0D287519C7495F00657656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB0D287619C7495F00657656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,14 +136,15 @@
 		AB0D289E19C7497D00657656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB0D28A519C7497D00657656 /* ReadingListModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadingListModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0D28AA19C7497D00657656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB0D28AB19C7497D00657656 /* ReadingListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListModelTests.swift; sourceTree = "<group>"; };
-		AB0D28BA19C749CE00657656 /* ModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelObject.swift; sourceTree = "<group>"; };
+		AB0D28AB19C7497D00657656 /* ReadingListModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ReadingListModelTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AB0D28BA19C749CE00657656 /* ModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ModelObject.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AB0D28BC19C74ED800657656 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
-		AB11E3DC19C755CB008BA124 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		AB11E3DF19C7AB77008BA124 /* ReadingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingList.swift; sourceTree = "<group>"; };
-		AB37840119C8DD720045B96F /* ReadingListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingListStore.swift; sourceTree = "<group>"; };
+		AB0DE27319C90B4D00DE5FE3 /* ViewBookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBookController.swift; sourceTree = "<group>"; };
+		AB11E3DC19C755CB008BA124 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Book.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AB11E3DF19C7AB77008BA124 /* ReadingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ReadingList.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AB37840119C8DD720045B96F /* ReadingListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ReadingListStore.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AB37840419C8EF6B0045B96F /* BooksAndAuthors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = BooksAndAuthors.plist; sourceTree = "<group>"; };
-		AB37840719C8F2B10045B96F /* ReadingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingListController.swift; sourceTree = "<group>"; };
+		AB37840719C8F2B10045B96F /* ReadingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ReadingListController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AB37841419C8F8140045B96F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AB37841719C8FD370045B96F /* ReadingListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadingListModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +183,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB0BACA919CB79DE000DB458 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AB0BACAA19CB79DE000DB458 /* Austen.png */,
+				AB0BACAB19CB79DE000DB458 /* Bacon.png */,
+				AB0BACAC19CB79DE000DB458 /* Carroll.png */,
+				AB0BACAD19CB79DE000DB458 /* Dostoevsky.png */,
+				AB0BACAE19CB79DE000DB458 /* Eliot.png */,
+				AB0BACAF19CB79DE000DB458 /* Emerson.png */,
+				AB0BACB019CB79DE000DB458 /* Hemingway.png */,
+				AB0BACB119CB79DE000DB458 /* Milne.png */,
+				AB0BACB219CB79DE000DB458 /* More.png */,
+				AB0BACB319CB79DE000DB458 /* Newton.png */,
+				AB0BACB419CB79DE000DB458 /* NoImage.png */,
+				AB0BACB519CB79DE000DB458 /* Shakespeare.png */,
+				AB0BACB619CB79DE000DB458 /* Thoreau.jpg */,
+				AB0BACB719CB79DE000DB458 /* Tolstoy.png */,
+				AB0BACB819CB79DE000DB458 /* Twain.png */,
+				AB0BACB919CB79DE000DB458 /* Wells.png */,
+				AB0BACBA19CB79DE000DB458 /* Whitman.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		AB0D286819C7495F00657656 = {
 			isa = PBXGroup;
 			children = (
@@ -165,12 +232,15 @@
 		AB0D287319C7495F00657656 /* SwiftReadingList */ = {
 			isa = PBXGroup;
 			children = (
+				AB0D287A19C7495F00657656 /* Main.storyboard */,
+				AB0D287F19C7495F00657656 /* LaunchScreen.xib */,
 				AB0D287619C7495F00657656 /* AppDelegate.swift */,
 				AB37841419C8F8140045B96F /* Extensions.swift */,
 				AB37840719C8F2B10045B96F /* ReadingListController.swift */,
-				AB0D287A19C7495F00657656 /* Main.storyboard */,
+				AB0DE27319C90B4D00DE5FE3 /* ViewBookController.swift */,
+				AB0BAC8019CB6DE7000DB458 /* AddBookController.swift */,
+				AB0BAC8119CB6DE7000DB458 /* EditBookController.swift */,
 				AB0D287D19C7495F00657656 /* Images.xcassets */,
-				AB0D287F19C7495F00657656 /* LaunchScreen.xib */,
 				AB0D287419C7495F00657656 /* Supporting Files */,
 			);
 			path = SwiftReadingList;
@@ -204,6 +274,7 @@
 		AB0D289C19C7497D00657656 /* ReadingListModel */ = {
 			isa = PBXGroup;
 			children = (
+				AB0BACA919CB79DE000DB458 /* Images */,
 				AB37840419C8EF6B0045B96F /* BooksAndAuthors.plist */,
 				AB37841719C8FD370045B96F /* ReadingListModel.h */,
 				AB0D28BA19C749CE00657656 /* ModelObject.swift */,
@@ -397,7 +468,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0BACC219CB79DE000DB458 /* Milne.png in Resources */,
+				AB0BACC419CB79DE000DB458 /* Newton.png in Resources */,
+				AB0BACCB19CB79DE000DB458 /* Whitman.png in Resources */,
 				AB37840519C8EF6B0045B96F /* BooksAndAuthors.plist in Resources */,
+				AB0BACC319CB79DE000DB458 /* More.png in Resources */,
+				AB0BACC819CB79DE000DB458 /* Tolstoy.png in Resources */,
+				AB0BACC719CB79DE000DB458 /* Thoreau.jpg in Resources */,
+				AB0BACC119CB79DE000DB458 /* Hemingway.png in Resources */,
+				AB0BACBD19CB79DE000DB458 /* Carroll.png in Resources */,
+				AB0BACBC19CB79DE000DB458 /* Bacon.png in Resources */,
+				AB0BACC019CB79DE000DB458 /* Emerson.png in Resources */,
+				AB0BACBF19CB79DE000DB458 /* Eliot.png in Resources */,
+				AB0BACBE19CB79DE000DB458 /* Dostoevsky.png in Resources */,
+				AB0BACC519CB79DE000DB458 /* NoImage.png in Resources */,
+				AB0BACBB19CB79DE000DB458 /* Austen.png in Resources */,
+				AB0BACC619CB79DE000DB458 /* Shakespeare.png in Resources */,
+				AB0BACC919CB79DE000DB458 /* Twain.png in Resources */,
+				AB0BACCA19CB79DE000DB458 /* Wells.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,8 +505,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB0D287719C7495F00657656 /* AppDelegate.swift in Sources */,
+				AB0DE27419C90B4D00DE5FE3 /* ViewBookController.swift in Sources */,
 				AB37841519C8F8140045B96F /* Extensions.swift in Sources */,
 				AB37840819C8F2B10045B96F /* ReadingListController.swift in Sources */,
+				AB0BAC8319CB6DE7000DB458 /* EditBookController.swift in Sources */,
+				AB0BAC8219CB6DE7000DB458 /* AddBookController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +518,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB37840919C8F2B10045B96F /* ReadingListController.swift in Sources */,
+				AB0DE27519C90EE100DE5FE3 /* ViewBookController.swift in Sources */,
 				AB37841619C8F8140045B96F /* Extensions.swift in Sources */,
 				AB0D288D19C7496000657656 /* SwiftReadingListTests.swift in Sources */,
+				AB0BAC8519CB7092000DB458 /* EditBookController.swift in Sources */,
+				AB0BAC8419CB7092000DB458 /* AddBookController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +792,7 @@
 				INFOPLIST_FILE = ReadingListModelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftReadingList.app/SwiftReadingList";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -712,7 +806,7 @@
 				INFOPLIST_FILE = ReadingListModelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftReadingList.app/SwiftReadingList";
+				TEST_HOST = "";
 			};
 			name = Release;
 		};
