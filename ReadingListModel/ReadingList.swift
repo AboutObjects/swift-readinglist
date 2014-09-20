@@ -4,17 +4,7 @@
 //
 import Foundation
 
-extension NSArray
-{
-    func toBooks() -> [Book]
-    {
-        return map(self, {
-            (currObj: AnyObject) -> Book in
-            return Book(currObj)
-        })
-    }
-}
-
+let BooksKey = "books"
 
 public class ReadingList: ModelObject
 {
@@ -31,31 +21,29 @@ public class ReadingList: ModelObject
     
     override class func keys() -> [String]
     {
-        return ["title", "books"]
+        return [TitleKey, BooksKey]
     }
     
-    public override init(dictionary: [String : AnyObject])
+    public override init(var dictionary: [String : AnyObject])
     {
-        self.title = dictionary["title"] as NSString ?? ""
+        if contains((dictionary.keys), BooksKey)
+        {
+            dictionary[BooksKey] = booksFromDictionaries(dictionary[BooksKey]! as [AnyObject])
+        }
         
         super.init(dictionary: dictionary)
-        
-        if contains((dictionary.keys), "books") {
-            precondition(dictionary["books"] is NSArray, "books must be an array.")
-            self.books = (dictionary["books"] as NSArray).toBooks()
-        }
     }
     
-    public override func dictionaryRepresentation() -> [NSObject : AnyObject]
+    public override func dictionaryRepresentation() -> [NSObject: AnyObject]
     {
-        var readingListDict = super.dictionaryRepresentation()
-
-        if let books = readingListDict["books"] as? NSArray {
-            readingListDict["books"] = map(books, {
-                (book: AnyObject) -> [NSObject: AnyObject] in
-                return book.dictionaryRepresentation()
-            })
+        var dictionary = super.dictionaryRepresentation() as [String: AnyObject]
+        
+        let values: AnyObject? = dictionary[BooksKey]
+        if let books = values as? [ModelObject]
+        {
+            dictionary[BooksKey] = dictionariesFromModelObjects(books)
         }
-        return readingListDict
+        
+        return dictionary
     }
 }

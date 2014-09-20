@@ -4,55 +4,65 @@
 //
 import Foundation
 
+let TitleKey = "title"
+let YearKey = "year"
+let AuthorKey = "author"
+
+let Unknown = "unknown"
+
 public class Book: ModelObject
 {
-    let unknown = "unknown"
-    
     public var title = ""
     public var year = ""
     public var author: Author?
     
     public override var description: String {
-        return "\(title), \(year), \(author ?? unknown)"
+        return "\(title), \(year), \(author ?? Unknown)"
     }
     
     override class func keys() -> [String]
     {
-        return ["title", "year", "author"]
+        return [TitleKey, YearKey, AuthorKey]
     }
     
-    public convenience init(_ some: AnyObject)
+    public convenience init(_ anObject: AnyObject)
     {
-        precondition(some is Book || some is [String: AnyObject],
+        precondition(anObject is Book || anObject is [String: AnyObject],
             "Argument must match types Book or [String: AnyObject].")
         
         var values: [String: AnyObject]?
-        if let dict = some as? [String: AnyObject] {
+        
+        if let dict = anObject as? [String: AnyObject] {
             values = dict
         }
-        else if let book = some as? Book {
+        else if let book = anObject as? Book {
             values = book.dictionaryRepresentation() as? [String: AnyObject]
         }
         
         self.init(dictionary: values!)
     }
     
-    public override init(dictionary: [String : AnyObject])
+    public override init(var dictionary: [String : AnyObject])
     {
-        var mutableDict = dictionary
-        if let authorDict = dictionary["author"] as? NSDictionary {
-            let authorDict = authorDict as? [String: AnyObject]
-            mutableDict["author"] = Author(dictionary: authorDict!)
+        let value: AnyObject? = dictionary[AuthorKey]
+        
+        if let dict = value as? [String: AnyObject]
+        {
+            dictionary[AuthorKey] = Author(dictionary: dict)
         }
-        super.init(dictionary: mutableDict)
+        
+        super.init(dictionary: dictionary)
     }
     
-    public override func dictionaryRepresentation() -> [NSObject : AnyObject]
+    public override func dictionaryRepresentation() -> [NSObject: AnyObject]
     {
-        var mutableDict = super.dictionaryRepresentation()
-        if let author = mutableDict["author"] as? Author {
-            mutableDict["author"] = author.dictionaryRepresentation()
+        var dictionary = super.dictionaryRepresentation() as [String: AnyObject]
+        
+        if let author = dictionary[AuthorKey] as? Author
+        {
+            dictionary[AuthorKey] = author.dictionaryRepresentation()
         }
-        return mutableDict
+        
+        return dictionary
     }
 }

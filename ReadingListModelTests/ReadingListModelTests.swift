@@ -13,9 +13,6 @@ let FirstName1 = "Fred"
 let LastName1 = "Smith"
 let AuthorDict1 = [FirstNameKey: FirstName1, LastNameKey: LastName1]
 
-let TitleKey = "title"
-let YearKey = "year"
-let AuthorKey = "author"
 let Title1 = "My Book" as NSString
 let Title2 = "Your Book"
 let Year1 = "1999" as NSString
@@ -23,7 +20,6 @@ let Year2 = "2012"
 let BookDict1 = [TitleKey: Title1, YearKey: Year1, AuthorKey: AuthorDict1]
 let BookDict2 = [TitleKey: Title2, YearKey: Year2, AuthorKey: AuthorDict1]
 
-let BooksKey = "books"
 let ReadingListTitle1 = "First Reading List Title" as NSString
 let ReadingListTitle2 = "Second Reading List Title" as NSString
 let ReadingListDict1 = [TitleKey: ReadingListTitle1, BooksKey: [BookDict1]]

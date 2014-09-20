@@ -4,6 +4,24 @@
 //
 import Foundation
 
+
+func booksFromDictionaries(dictionaries: [AnyObject]) -> [Book]
+{
+    return map(dictionaries, { (currObj: AnyObject) -> Book in
+        return Book(currObj)
+    })
+}
+
+func dictionariesFromModelObjects(modelObjects: [ModelObject]) -> [NSDictionary]
+{
+    let dictionaries = map(modelObjects, { (modelObject: AnyObject) -> NSDictionary in
+        return modelObject.dictionaryRepresentation()
+    })
+    
+    return dictionaries
+}
+
+
 public class ModelObject: NSObject
 {
     // TODO: Ideally, keys would be a class variable, but that feature
