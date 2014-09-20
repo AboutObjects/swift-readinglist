@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
-//        UILabel.appearance().textColor = UIColor.labelColor()
         return true
     }
 }
