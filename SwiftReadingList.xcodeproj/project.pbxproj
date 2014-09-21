@@ -56,6 +56,11 @@
 		AB37841519C8F8140045B96F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37841419C8F8140045B96F /* Extensions.swift */; };
 		AB37841619C8F8140045B96F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37841419C8F8140045B96F /* Extensions.swift */; };
 		AB37846A19C8FDFA0045B96F /* ReadingListModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AB37841719C8FD370045B96F /* ReadingListModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB50C9B219CF7C6C00DA3B83 /* screenshot-edit.png in Resources */ = {isa = PBXBuildFile; fileRef = AB50C9AE19CF7C6C00DA3B83 /* screenshot-edit.png */; };
+		AB50C9B319CF7C6C00DA3B83 /* screenshot-list-edit.png in Resources */ = {isa = PBXBuildFile; fileRef = AB50C9AF19CF7C6C00DA3B83 /* screenshot-list-edit.png */; };
+		AB50C9B419CF7C6C00DA3B83 /* screenshot-list.png in Resources */ = {isa = PBXBuildFile; fileRef = AB50C9B019CF7C6C00DA3B83 /* screenshot-list.png */; };
+		AB50C9B519CF7C6C00DA3B83 /* screenshot-view.png in Resources */ = {isa = PBXBuildFile; fileRef = AB50C9B119CF7C6C00DA3B83 /* screenshot-view.png */; };
+		AB50C9B719CF7E9200DA3B83 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB50C9B619CF7E9200DA3B83 /* LICENSE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +152,12 @@
 		AB37840719C8F2B10045B96F /* ReadingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ReadingListController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AB37841419C8F8140045B96F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AB37841719C8FD370045B96F /* ReadingListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadingListModel.h; sourceTree = "<group>"; };
+		AB50C9A919CF70FE00DA3B83 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AB50C9AE19CF7C6C00DA3B83 /* screenshot-edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-edit.png"; sourceTree = "<group>"; };
+		AB50C9AF19CF7C6C00DA3B83 /* screenshot-list-edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-list-edit.png"; sourceTree = "<group>"; };
+		AB50C9B019CF7C6C00DA3B83 /* screenshot-list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-list.png"; sourceTree = "<group>"; };
+		AB50C9B119CF7C6C00DA3B83 /* screenshot-view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot-view.png"; sourceTree = "<group>"; };
+		AB50C9B619CF7E9200DA3B83 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +221,9 @@
 		AB0D286819C7495F00657656 = {
 			isa = PBXGroup;
 			children = (
+				AB50C9A919CF70FE00DA3B83 /* README.md */,
+				AB50C9B619CF7E9200DA3B83 /* LICENSE.txt */,
+				AB50C9AD19CF725100DA3B83 /* images */,
 				AB0D289C19C7497D00657656 /* ReadingListModel */,
 				AB0D28A819C7497D00657656 /* ReadingListModelTests */,
 				AB0D287319C7495F00657656 /* SwiftReadingList */,
@@ -310,6 +324,17 @@
 				AB0D28AA19C7497D00657656 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB50C9AD19CF725100DA3B83 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AB50C9AE19CF7C6C00DA3B83 /* screenshot-edit.png */,
+				AB50C9AF19CF7C6C00DA3B83 /* screenshot-list-edit.png */,
+				AB50C9B019CF7C6C00DA3B83 /* screenshot-list.png */,
+				AB50C9B119CF7C6C00DA3B83 /* screenshot-view.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +476,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB50C9B419CF7C6C00DA3B83 /* screenshot-list.png in Resources */,
+				AB50C9B219CF7C6C00DA3B83 /* screenshot-edit.png in Resources */,
+				AB50C9B319CF7C6C00DA3B83 /* screenshot-list-edit.png in Resources */,
+				AB50C9B519CF7C6C00DA3B83 /* screenshot-view.png in Resources */,
+				AB50C9B719CF7E9200DA3B83 /* LICENSE.txt in Resources */,
 				AB0D287C19C7495F00657656 /* Main.storyboard in Resources */,
 				AB0D288119C7495F00657656 /* LaunchScreen.xib in Resources */,
 				AB0D287E19C7495F00657656 /* Images.xcassets in Resources */,
