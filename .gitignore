@@ -1,0 +1,15 @@
+# Xcode 4
+xcuserdata
+xcshareddata
+
+# OS X
+.DS_Store
+
+# emacs
+*~
+
+# Automatic backup files
+*(Autosaved).rtfd/
+
+# Scrivener
+*.lock
