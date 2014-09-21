@@ -29,7 +29,7 @@ public class ReadingListStore : NSObject
     public init(_ storeName: NSString)
     {
         self.storeName = storeName
-        self.documentURL = fileURLForDocument(storeName, type: "plist")
+        documentURL = fileURLForDocument(storeName, type: "plist")
         super.init()
     }
     
