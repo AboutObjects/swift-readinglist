@@ -24,14 +24,27 @@ public class ReadingList: ModelObject
         return [TitleKey, BooksKey]
     }
     
-    public override init(var dictionary: [String : AnyObject])
+//    public override init(var dictionary: [String : AnyObject])
+//    {
+//        if contains((dictionary.keys), BooksKey)
+//        {
+//            let dictionaries = dictionary[BooksKey]! as [AnyObject]
+//            dictionary[BooksKey] = toModelObjects(dictionaries, Book.self)
+//        }
+//        
+//        super.init(dictionary: dictionary)
+//    }
+    
+    public override func setValue(var value: AnyObject!, forKey key: String!)
     {
-        if contains((dictionary.keys), BooksKey)
+        if (key == BooksKey)
         {
-            dictionary[BooksKey] = booksFromDictionaries(dictionary[BooksKey]! as [AnyObject])
+            if let dicts = value as? [[String: AnyObject]] {
+                value = map(dicts, { Book.self(dictionary: $0) })
+            }
         }
-        
-        super.init(dictionary: dictionary)
+
+        super.setValue(value, forKey: key)
     }
     
     public override func dictionaryRepresentation() -> [NSObject: AnyObject]
@@ -41,7 +54,8 @@ public class ReadingList: ModelObject
         let values: AnyObject? = dictionary[BooksKey]
         if let books = values as? [ModelObject]
         {
-            dictionary[BooksKey] = dictionariesFromModelObjects(books)
+            dictionary[BooksKey] = map(books, { $0.dictionaryRepresentation() })
+//            dictionary[BooksKey] = toDictionaries(books)
         }
         
         return dictionary

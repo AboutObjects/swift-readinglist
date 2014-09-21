@@ -2,7 +2,6 @@
 // Copyright (C) 2014 About Objects, Inc. All Rights Reserved.
 // See LICENSE.txt for this example's licensing information.
 //
-
 import UIKit
 import XCTest
 import ReadingListModel
@@ -75,7 +74,14 @@ class ReadingListModelTests: XCTestCase
         let bookDicts = value as [[String: AnyObject]]
         XCTAssertEqual(readingList2.books.count, bookDicts.count, "")
     }
-    
+
+//    func testModelObjectsFromDictionary()
+//    {
+//        let bookDicts = ReadingListDict2[BooksKey] as NSArray
+//        let bookObjs = bookDicts.toModelObjects(Book.self)
+//        println("\(bookObjs)")
+//    }
+
     func XXXtestMapReduce()
     {
         let readingList2 = ReadingList(dictionary: ReadingListDict2)

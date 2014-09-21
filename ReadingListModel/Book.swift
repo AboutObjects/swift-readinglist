@@ -25,24 +25,7 @@ public class Book: ModelObject
         return [TitleKey, YearKey, AuthorKey]
     }
     
-    public convenience init(_ anObject: AnyObject)
-    {
-        precondition(anObject is Book || anObject is [String: AnyObject],
-            "Argument must match types Book or [String: AnyObject].")
-        
-        var values: [String: AnyObject]?
-        
-        if let dict = anObject as? [String: AnyObject] {
-            values = dict
-        }
-        else if let book = anObject as? Book {
-            values = book.dictionaryRepresentation() as? [String: AnyObject]
-        }
-        
-        self.init(dictionary: values!)
-    }
-    
-    public override init(var dictionary: [String : AnyObject])
+    public required init(var dictionary: [String : AnyObject])
     {
         let value: AnyObject? = dictionary[AuthorKey]
         
